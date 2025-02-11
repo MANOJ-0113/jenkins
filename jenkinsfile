@@ -1,11 +1,11 @@
 pipeline {
-   agent any
-    stages {
-      stage('test') {
-        steps {
-           echo 'hello world'
-           bat 'python test.py'
-        }
+      agent any
+       stages {
+         stage ('test') {
+           steps {
+              echo 'hello world'
+              bat 'python test.py'
+           }
+      }
    }
-}
 }
