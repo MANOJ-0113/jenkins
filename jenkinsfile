@@ -1,1 +1,8 @@
-pipeline 
+pipeline {
+   agent any
+    stages {
+      stage('test') {
+        steps {
+           echo "hello world"
+           bat ' "C:\\Users\\saima\\AppData\\Local\\Microsoft\\WindowsApps\\python.exe" test.py'
+
